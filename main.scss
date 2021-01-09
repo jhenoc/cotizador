@@ -1,0 +1,114 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap');
+
+/*Variables*/
+$font: 'Overpass', sans-serif;
+$white: #FFFFFF;
+$liliac: #341F61;
+$gray: #E4E4E4;
+$coltext: #585858;
+
+.rectangleHeader{
+    width: 100%;
+    height: 173px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $liliac; 
+        h1{
+            font-family: $font;
+            font-size: 36px;
+            color: $white;
+            text-align: center;
+        }
+}
+.boxInputsData{
+    width: 235px;
+}
+.bodyCalculator{
+    display: flex;
+    flex-direction: row;
+}
+.custom-select, .titleBox, .form-control, .input-group-text{
+    font-family: $font;
+    font-size: 15px;
+}
+.custom-select{
+    background-color: $gray;
+    border: none;
+    border-radius: 4px;
+    color: $coltext;
+}
+.rowBox{
+    display: flex;
+    .input-group{
+        height: 38px;
+        border-radius: 4px;
+        width: 60%;
+    }
+}
+.titleBox{
+    display: flex;
+    padding-top: 7px;
+    padding-right: 10px;
+    width: 122px;
+    color: $coltext;
+}
+.form-control, .input-group-text{
+    background-color: $gray;
+    border: none;
+}
+.input-group-text{
+    color: $coltext;
+}
+$widthbtn: 350px;
+.contButtonAdd{
+    width: 80px;
+    padding: 10px;            
+            button{
+                border-style: dashed;
+                border-color: $coltext;
+                border-width: medium;
+                background-color: $gray;
+                color: $coltext;
+                font-family: $font;
+                font-size: 15px; 
+                transform: translate(-120px,220px) rotate(0.75turn);
+                width: 350px;              
+            }
+}
+.container{
+    .calcBtn{
+        justify-content: center;
+        display: flex;
+        button{
+            background-color: #2BA13C;
+            color: white;
+            font-family: $font;
+            font-size: 30px; 
+            border-radius: 13px;
+            width: 456px;
+            border-style: none;              
+        }
+    }
+}
+.areaCalc{
+    display: flex;    
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+        .textOutput{
+            font-family: $font;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            width: 140px;
+            padding-right: 5px;
+        }
+        .resultOutput{
+            background-color: $gray;
+            width: 240px;
+            border-radius: 13px;
+        }
+        
+}
