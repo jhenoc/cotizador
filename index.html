@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    
+    <script defer src="js/parameters.js"></script>
+    <script defer src="js/variables.js"></script>
+    <script defer src="js/objects.js"></script>
     <title>Cotizador</title>
 </head>
 
@@ -31,25 +33,25 @@
                     <div class="input-group mb-3">
                         <select id="inputGroupSelect02" class="custom-select" onchange="getSelectedDiameter()">
                             <option selected>Seleccionar</option>
-                            <option value="0">1/2"</option>
-                            <option value="1">3/4"</option>
-                            <option value="2">1"</option>
-                            <option value="3">1 1/4"</option>
-                            <option value="4">1 1/2"</option>
-                            <option value="5">2"</option>
-                            <option value="6">2 1/2"</option>
-                            <option value="7">3"</option>
-                            <option value="8">4"</option>
-                            <option value="9">5"</option>
-                            <option value="10">6"</option>
-                            <option value="11">8"</option>
-                            <option value="12">10"</option>
-                            <option value="13">12"</option>
+                            <option value="1/2">1/2"</option>
+                            <option value="3/4">3/4"</option>
+                            <option value="1">1"</option>
+                            <option value="1 1/4">1 1/4"</option>
+                            <option value="1 1/2">1 1/2"</option>
+                            <option value="2">2"</option>
+                            <option value="2 1/2">2 1/2"</option>
+                            <option value="3">3"</option>
+                            <option value="4">4"</option>
+                            <option value="5">5"</option>
+                            <option value="6">6"</option>
+                            <option value="8">8"</option>
+                            <option value="10">10"</option>
+                            <option value="12">12"</option>
                             <option value="14">14"</option>
-                            <option value="15">16"</option>
-                            <option value="16">18"</option>
-                            <option value="17">20"</option>
-                            <option value="18">24"</option>
+                            <option value="16">16"</option>
+                            <option value="18">18"</option>
+                            <option value="20">20"</option>
+                            <option value="24">24"</option>
                         </select>
 
                     </div>
@@ -58,7 +60,7 @@
                 <div class="rowBox">
                     <div class="titleBox"> Codo 90°</div>
                     <div class="input-group">
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control" id="elbow90" onchange="getSelectedElbow()"
                             aria-label="Dollar amount (with dot and two decimal places)">
                         <span class="input-group-text">Un.</span>
                     </div>
@@ -67,7 +69,7 @@
                 <div class="rowBox">
                     <div class="titleBox"> Codo 45°</div>
                     <div class="input-group">
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control " id="elbow45"
                             aria-label="Dollar amount (with dot and two decimal places)">
                         <span class="input-group-text">Un.</span>
                     </div>
@@ -76,7 +78,7 @@
                 <div class="rowBox">
                     <div class="titleBox"> Te</div>
                     <div class="input-group">
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control" id="tee"
                             aria-label="Dollar amount (with dot and two decimal places)">
                         <span class="input-group-text">Un.</span>
                     </div>
@@ -85,7 +87,7 @@
                 <div class="rowBox">
                     <div class="titleBox"> Reducción</div>
                     <div class="input-group">
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control" id="reduction"
                             aria-label="Dollar amount (with dot and two decimal places)">
                         <span class="input-group-text">Un.</span>
                     </div>
@@ -94,7 +96,7 @@
                 <div class="rowBox">
                     <div class="titleBox"> Brida</div>
                     <div class="input-group">
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control" id="flange"
                             aria-label="Dollar amount (with dot and two decimal places)">
                         <span class="input-group-text">Un.</span>
                     </div>
@@ -103,7 +105,7 @@
                 <div class="rowBox">
                     <div class="titleBox"> Longitud de caño</div>
                     <div class="input-group">
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control" id="lengthtube"
                             aria-label="Dollar amount (with dot and two decimal places)">
                         <span class="input-group-text">m</span>
                     </div>
@@ -135,14 +137,14 @@
     </div>
     <div class="container">
         <div class="calcBtn">
-            <button type="button" class="btn btn-primary">CALCULAR</button>
+            <button type="button" class="btn btn-primary" id="calculateButton">CALCULAR</button>
         </div>
         <div class="container">
             <div class="areaCalc">
                 <div class="textOutput">
                     <p>SUPERFICIE TOTAL</p>
                 </div>
-                <div class="resultOutput">
+                <div class="resultOutput" id="supResult">
 
                 </div>
             </div>
@@ -170,7 +172,7 @@
 
     <script src="\node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
 
-    <script src="/js/script.js"></script>
+
 </body>
 
 </html>
