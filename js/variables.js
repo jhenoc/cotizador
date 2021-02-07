@@ -16,7 +16,10 @@ localStorage.setItem('reductionQuantSaved', reductionQuant);
 let flangeQuant = document.getElementById("flange").value;
 localStorage.setItem('flangeQuantSaved', flangeQuant);
 
-let lengthTube = document.getElementById("lengthTube").value;
+let lengthTubeTotal = document.getElementById("lengthTube").value;
 localStorage.setItem('lengthTubeSaved', lengthTube);
+
+let totalPriceCalculated = document.getElementById("totalPrice").value;
+localStorage.setItem('totalPriceCalculatedSaved', totalPriceCalculated);
 
 let buttonCalculate = document.getElementById("calculateButton");
