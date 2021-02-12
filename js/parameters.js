@@ -2,7 +2,7 @@ const priceM2 = 10; //dolares
 const arrayDiameter = ["1/2", "3/4", "1", "1 1/4", "1 1/2", "2", "2 1/2", "3", "4", "5", "6"," 8", "10", "12", "14", "16", "18", "20", "24"];
 const arrayAccesory = ["elbow90", "elbow45", "tee", "reduction", "flange", "lengthTube"];
 
-let jsonDiameter = [ {"diam": "1/2"}, 
+/* let jsonDiameter = [ {"diam": "1/2"}, 
                      {"diam": "3/4"},
                      {"diam": "1"},
                      {"diam": "1 1/4"},
@@ -22,7 +22,7 @@ let jsonDiameter = [ {"diam": "1/2"},
                      {"diam": "20"},
                      {"diam": "24"},
 ]
-
+ */
 let jsonElbow90 = [ {"diam": "1/2", "factor": 0.030},
                     {"diam": "3/4", "factor": 0.045},
                     {"diam": "1", "factor": 0.060},
